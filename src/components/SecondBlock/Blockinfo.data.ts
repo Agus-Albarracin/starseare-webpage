@@ -1,6 +1,6 @@
-import { BestBusinessData } from "./BestBusiness.types";
+import { blockinfo } from "./Blockinfo.type";
 
-export const dataFeaturesBusiness: BestBusinessData = [
+export const blockinfodata: blockinfo = [
   {
     id: 1,
     icon: "rewards",

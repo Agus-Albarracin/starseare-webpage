@@ -4,7 +4,7 @@ import Image from "next/image"
 import { MotionTransition } from "../MotionTransition"
 import { Reveal } from "../Reveal"
 
-export function ControlBilling() {
+export function AdicionalBlock() {
     return (
         <div className="relative p-4 py-20 md:py-20">
             <div className="flex flex-col-reverse max-w-5xl mx-auto md:flex-row place-content-evenly">
@@ -19,8 +19,7 @@ export function ControlBilling() {
                         </h2>
                     </Reveal>   
                     <Reveal>
-                        <p className="max-w-md mt-10">Buscamos que Nuestro Personal reúna serie de características que nos permita contar con hombres Confiables, Capaces y Experimentados.
-                        <br />La selección del mismo es el resultado de un proceso de exámenes físicos, psicológicos y psicotécnicos, llevados  acabo por profesionales competentes que certifican su aptitud e doneidad para ejercer los diferentes cargos, conjuntamente con un exhaustivo de antecedentes y curriculum de cada postulante.</p>
+                        <p className="max-w-md mt-10">La selección del mismo es el resultado de un proceso de exámenes físicos, psicológicos y psicotécnicos, llevados  acabo por profesionales competentes que certifican su aptitud e idoneidad para ejercer los diferentes cargos, conjuntamente con un exhaustivo de antecedentes y curriculum de cada postulante.</p>
                     </Reveal>
                 </div>
             </div>

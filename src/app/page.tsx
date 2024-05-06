@@ -1,5 +1,5 @@
-import { BestBusiness } from "@/components/BestBusiness";
-import { ControlBilling } from "@/components/ControlBilling";
+import { SecondBlock } from "@/components/SecondBlock";
+import { AdicionalBlock } from "@/components/AdicionalBlock";
 import { CounterData } from "@/components/CounterData";
 import { FirstBlock } from "@/components/FirstBlock";
 import { Footer } from "@/components/Footer/";
@@ -11,8 +11,8 @@ export default function Home() {
       <Header />
       <FirstBlock />
       <CounterData />
-      <BestBusiness />
-      <ControlBilling />
+      <SecondBlock />
+      <AdicionalBlock />
       <Footer />
     </>
   )
