@@ -3,7 +3,7 @@ import { RiPhoneFill,RiPhoneLine} from "react-icons/ri";
 export const footerData = [
   {
     id: 1,
-    title: "Hace click y comunicate!",
+    title: "Hacé click y comunicate!",
     links: [
       {
         id: 1,
