@@ -1,2 +1,1 @@
-NextJS | Tailwind CSS | Framer Motion | TypeScript 
-
+![logo - Startseare Security Company](./public/assets/logo.png)
