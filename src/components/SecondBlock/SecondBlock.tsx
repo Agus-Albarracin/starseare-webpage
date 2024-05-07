@@ -23,7 +23,7 @@ export function SecondBlock() {
                     <Reveal>
                         <p className="max-w-md mt-10">Nuestra Empresa opera mediante un sistema denominado <em>Pro-activo</em>.
                         <br />• Esto significa que no solo respondemos ante el hecho consumado, si no que tratamos de prevenir los problemas, imponiendo y haciendo cumplir todas la medidas necesarios e imprescindibles para tal efecto.
-                        <br />• A través de este Sistema logramos evaluar y mejorar la eficiencia y calidad de los servicios prestados a n          uestros clientes.</p>
+                        <br />• A través de este Sistema logramos evaluar y mejorar la eficiencia y calidad de los servicios prestados a nuestros clientes.</p>
                     
                     </Reveal>   
                 </div>
