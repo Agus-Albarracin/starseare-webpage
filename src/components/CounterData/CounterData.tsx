@@ -3,9 +3,13 @@ import CountUp from "react-countup";
 import { MotionTransition } from "../MotionTransition";
 import { dataCounter } from "./CounterData.data";
 import { dataCounter2 } from "./CounterData2.data";
+import { BackgroundCenter} from "../BackgroundCenter"
 
 export function CounterData() {
     return (
+        <>
+        <BackgroundCenter />
+        
         <MotionTransition className="max-w-5xl py-10 mx-auto md:py-60">
             <div className="justify-between md:flex">
                 {dataCounter.map(({ id, startNumber, endNumber, text }) => (
@@ -26,5 +30,6 @@ export function CounterData() {
                 ))}
             </div>
         </MotionTransition>
+        </>
     )
 }
