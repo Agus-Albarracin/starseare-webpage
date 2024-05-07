@@ -22,7 +22,7 @@ export function FirstBlock() {
                         </h1>   
                     </Reveal>
                     <Reveal>
-                        <p className="max-w-md mt-10">Somos una empresa de seguridad tanto pública como privdada, con personal altamente capacitado bajo disiplinas comprobables.
+                        <p className="max-w-md mt-10">Somos una empresa de seguridad tanto pública como privada, con personal altamente capacitado bajo disciplinas comprobables.
                         <br /> Utilizamos metodologías de acción tecnológicas y de alta sofisticación para lograr y cumplir los objetivos.
                         <br /> Nuestro servicio es responsable de una reputación solida dentro del marco legal y responsabilidad.</p>
                     </Reveal>
