@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Reveal } from "../Reveal";
 import { footerData, footerSocialNetworks } from "./Footer.data";
 import Link from "next/link";
+import ContactForm from "../MailBlock/MailBlock";
 
 
 export function Footer() {
@@ -24,8 +25,10 @@ export function Footer() {
                                 </Reveal>
                             </Link>
                         ))}
+             <ContactForm />
                     </div>
                 ))}
+
             </div>
 
             <div className="border-[#3F3E45] border-[1px] my-7" />

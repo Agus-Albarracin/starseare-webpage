@@ -9,21 +9,6 @@ export const footerData = [
         id: 1,
         name: "Volver al contenido",
         link: "#",
-      },
-      {
-        id: 2,
-        name: "Comunicate por whatsapp",
-        link: "https://wa.me/542215985797",
-      },
-      {
-        id: 3,
-        name: "Comunicate por whatsapp 2  ",
-        link: "https://wa.me/542215529308",
-      },
-      {
-        id: 4,
-        name: "Envia un mail: \n    starseareseguridadprivada@gmail.com",
-        link: "mailto:starseareseguridadprivada@gmail.com" ,
       }
     ],
   }
