@@ -8,8 +8,8 @@ export const dataCounter2 = [
     {
       id: 2,
       startNumber: 0,
-      endNumber: 1500,
-      text: "clientes",
+      endNumber: 70,
+      text: "Municipios",
     },
   ];
   
