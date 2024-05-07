@@ -14,8 +14,10 @@ export function AdicionalBlock() {
                 <div className="flex-1 p-6 md:p-8">
                     <Reveal>
                         <h2 className="text-5xl font-semibold">
-                            Equipo de trabajo <br />
-                            altamente capacitado.
+                        <span className="block degradedBlue bg-blueLight">Equipo de</span>
+                         trabajo <br />
+                         <span className="block degradedBlue bg-blueLight">altamente</span>
+                         capacitado.
                         </h2>
                     </Reveal>   
                     <Reveal>

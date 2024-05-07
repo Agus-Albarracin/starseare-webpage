@@ -16,13 +16,14 @@ export function SecondBlock() {
                         <h2 className="text-5xl font-semibold">
                             <span className="block degradedBlue bg-blueLight">Tú seguridad </span>
                             es nuestro<br />
-                            principal deber
+                            <span className="block degradedBlue bg-blueLight">principal deber </span>
+
                         </h2>
                     </Reveal>
                     <Reveal>
                         <p className="max-w-md mt-10">Nuestra Empresa opera mediante un sistema denominado <em>Pro-activo</em>.
                         <br />• Esto significa que no solo respondemos ante el hecho consumado, si no que tratamos de prevenir los problemas, imponiendo y haciendo cumplir todas la medidas necesarios e imprescindibles para tal efecto.
-                        <br />• A través de este Sistema logramos evaluar y mejroar la eficiencia y calidad de los servicios prestados a nmuestros clientes.</p>
+                        <br />• A través de este Sistema logramos evaluar y mejorar la eficiencia y calidad de los servicios prestados a n          uestros clientes.</p>
                     
                     </Reveal>   
                 </div>

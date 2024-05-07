@@ -2,7 +2,6 @@
 import CountUp from "react-countup";
 import { MotionTransition } from "../MotionTransition";
 import { dataCounter } from "./CounterData.data";
-import { dataCounter2 } from "./CounterData2.data";
 import { BackgroundCenter} from "../BackgroundCenter"
 
 export function CounterData() {
@@ -15,18 +14,10 @@ export function CounterData() {
                 {dataCounter.map(({ id, startNumber, endNumber, text }) => (
                     <div key={id} className="py-5 text-2xl text-center md:text-left">
 
-                        <CountUp start={startNumber} end={endNumber} duration={1.5} enableScrollSpy />
+                        <CountUp start={startNumber} end={endNumber} duration={3} enableScrollSpy />
                         {" "}
                         <span className="degradedBlue bg-blueLight">{text}</span>
                     </div>
-                ))}
-                {dataCounter2.map(({ id, startNumber, endNumber, text }) => (
-                    <div key={id} className="py-5 text-2xl text-center md:text-left">
-                        + 
-                        <CountUp start={startNumber} end={endNumber} duration={1.5} enableScrollSpy />
-                        {" "}
-                        <span className="degradedBlue bg-blueLight">{text}</span>
-                        </div>
                 ))}
             </div>
         </MotionTransition>
