@@ -1,33 +1,18 @@
-import { useEffect, useRef } from "react";
+﻿"use client"
+
 import { MotionTransitionProps } from "./MotionTransition.types";
-import { useAnimation, useInView, motion } from "framer-motion";
-import { fadeIn } from "@/utils/transitions";
+import { motion, useReducedMotion } from "framer-motion";
 
-
-export function MotionTransition(props: MotionTransitionProps) {
-    const { children, className } = props
-
-    const ref = useRef(null)
-    const isInView = useInView(ref, { once: false })
-    const mainControls = useAnimation()
-    const slideControls = useAnimation()
-
-    useEffect(() => {
-        if (isInView) {
-            mainControls.start("visible")
-            slideControls.start("visible")
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isInView])
-
+export function MotionTransition({ children, className }: MotionTransitionProps) {
+    const reduceMotion = useReducedMotion()
 
     return (
-        <div ref={ref}>
+        <div>
             <motion.div
-                variants={fadeIn()}
-                initial="hidden"
-                animate={mainControls}
-                exit="hidden"
+                initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: reduceMotion ? 0 : 0.55, ease: "easeOut" }}
                 className={className}
             >
                 {children}

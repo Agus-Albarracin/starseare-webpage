@@ -1,58 +1,19 @@
-"use client"
-import { useAnimation, useInView, motion } from "framer-motion"
-import { useEffect, useRef } from "react"
+﻿"use client"
+
+import { motion, useReducedMotion } from "framer-motion"
 
 export function Reveal({ children }: { children: React.ReactNode }) {
-
-    const ref = useRef(null)
-    const isInView = useInView(ref, { once: false })
-    const mainControls = useAnimation()
-    const slideControls = useAnimation()
-
-    useEffect(() => {
-        if (isInView) {
-            mainControls.start("visible")
-            slideControls.start("visible")
-        }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [isInView])
-
-
+    const reduceMotion = useReducedMotion()
 
     return (
-        <div ref={ref} className="relative overflow-hidden w-fit">
-            <motion.div
-                variants={{
-                    hidden: { opacity: 0, y: 75 },
-                    visible: { opacity: 1, y: 0 }
-                }}
-                initial="hidden"
-                animate={mainControls}
-                exit="hidden"
-                transition={{ duration: 0.5, delay: 0.5 }}
-            >
-                {children}
-            </motion.div>
-            <motion.div
-                variants={{
-                    hidden: { left: 0 },
-                    visible: { left: "100%" }
-                }}
-                initial="hidden"
-                animate={slideControls}
-                transition={{ duration: 0.5, ease: "easeIn" }}
-                style={{
-                    position: "absolute",
-                    top: 4,
-                    bottom: 4,
-                    left: 0,
-                    right: 0,
-                    background: "#007acc",
-                    zIndex: 20
-                }}
-            >
-
-            </motion.div>
-        </div>
+        <motion.div
+            className="relative min-w-0"
+            initial={reduceMotion ? false : { opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: reduceMotion ? 0 : 0.45, ease: "easeOut" }}
+        >
+            {children}
+        </motion.div>
     )
 }
