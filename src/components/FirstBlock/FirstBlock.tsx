@@ -1,6 +1,4 @@
 "use client"
-import Link from "next/link"
-import { BackgroundRadialRight } from "../BackgroundRadialRight"
 import { MotionTransition } from "../MotionTransition"
 import Image from "next/image"
 import { Reveal } from "../Reveal"
@@ -8,12 +6,11 @@ import { Reveal } from "../Reveal"
 
 export function FirstBlock() {
     return (
-        <div className="relative p-4 md:py-40">
-            <BackgroundRadialRight />
-            <div className="grid max-w-5xl mx-auto md:grid-cols-2">
+        <div className="relative px-6 py-12 md:py-40">
+            <div className="grid max-w-5xl mx-auto items-center gap-10 md:grid-cols-2">
                 <div>
                     <Reveal>
-                        <h1 className="text-5xl font-semibold">
+                        <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
                             Seguridad
                             <span className="block degradedBlue bg-blueLight">
                                 Privada

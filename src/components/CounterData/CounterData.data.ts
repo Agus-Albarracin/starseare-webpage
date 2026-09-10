@@ -3,7 +3,7 @@ export const dataCounter = [
     id: 1,
     startNumber: 0,
     endNumber: 365,
-    text: "dias del año",
+    text: "días del año",
   },
   {
     id: 2,
